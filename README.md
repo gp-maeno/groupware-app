@@ -1,31 +1,30 @@
-# ニップシステム - 日報管理アプリケーション
+# Groupware App - 日報管理システム
 
-NativePHPを使用したデスクトップアプリケーションとして開発された日報管理システムです。
+NativePHPを利用したデスクトップ版日報管理システムです。
 
 ## 機能一覧
 
-- ログイン / ログアウト
-- 日報一覧（ページング機能付き）
-- 日報詳細表示
+- ログイン認証
+- 日報の一覧表示（ページング機能付き）
+- 日報の詳細表示
 - 日報の新規登録
 - 日報の編集
 
-## セットアップ方法
+## 開発環境
 
-### 必要要件
-
-- PHP 8.1以上
-- Composer
+- PHP 8.2以上
+- Laravel 10.x
 - NativePHP
+- SQLite (開発用)
 
-### インストール手順
+## インストール方法
 
 ```bash
-# リポジトリをクローン
+# リポジトリのクローン
 git clone https://github.com/gp-maeno/groupware-app.git
 cd groupware-app
 
-# 依存関係のインストール
+# 依存パッケージのインストール
 composer install
 
 # .envファイルの作成
@@ -34,14 +33,21 @@ cp .env.example .env
 # アプリケーションキーの生成
 php artisan key:generate
 
-# データベースのセットアップ
+# データベースのマイグレーションとシード
 php artisan migrate --seed
 
-# NativePHPアプリケーションの起動
+# NativePHPアプリの起動
 php artisan native:serve
 ```
 
-## 開発情報
+## 使用方法
 
-- フレームワーク: Laravel + NativePHP
-- 主要言語: PHP, JavaScript
+アプリケーションを起動すると、ログイン画面が表示されます。
+初期ユーザーとして以下の情報でログインできます。
+
+- ユーザー名: admin@example.com
+- パスワード: password
+
+## ライセンス
+
+[MIT License](LICENSE)
