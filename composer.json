@@ -1,16 +1,16 @@
 {
     "name": "gp-maeno/groupware-app",
     "type": "project",
-    "description": "NativePHPを使用した日報管理デスクトップアプリケーション",
-    "keywords": ["laravel", "nativephp", "日報", "ニップシステム"],
+    "description": "Desktop daily report management system using NativePHP",
+    "keywords": ["laravel", "nativephp", "daily report", "groupware"],
     "license": "MIT",
     "require": {
-        "php": "^8.1",
-        "guzzlehttp/guzzle": "^7.0.1",
+        "php": "^8.2",
+        "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^10.0",
         "laravel/sanctum": "^3.2",
         "laravel/tinker": "^2.8",
-        "nativephp/electron": "^0.4.0"
+        "nativephp/laravel": "^0.7.0"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
@@ -18,7 +18,7 @@
         "laravel/sail": "^1.18",
         "mockery/mockery": "^1.4.4",
         "nunomaduro/collision": "^7.0",
-        "phpunit/phpunit": "^10.1",
+        "phpunit/phpunit": "^10.0",
         "spatie/laravel-ignition": "^2.0"
     },
     "autoload": {
